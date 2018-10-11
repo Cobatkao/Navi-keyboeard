@@ -21,7 +21,7 @@ main {
 }
 /* 键盘遮罩层 */
 #main {
-  background:rgba(255,255,255,0.2);
+  background:rgba(255,255,255,0.6);
   border-radius: 8px;
   padding: 3rem 4rem;
 }
@@ -76,4 +76,9 @@ div.key:hover > kbd > button {
   background: transparent;
   outline: none;
   border: none;
+}
+.keypressing {
+  transform:scale(1.1);
+  border-color:#ffc600;
+  box-shadow: 0 0 10px #ffc600;
 }
