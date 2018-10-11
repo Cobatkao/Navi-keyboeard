@@ -122,7 +122,7 @@ function generateKeyBoard(keys, hash) {
         var img_custom = btn_click.previousSibling
         // 获取点击的对应字母给key
         var key = btn_click.id
-        var input = prompt('大哥，给我一个网址呗：）')
+        var input = prompt('请输入键位[' + btn_click.id + ']对应的网站地址')
         // 把默认的hash值替换为自定义url
         hash[key] = input 
         img_custom.src = 'https://' + input + '/favicon.ico'
