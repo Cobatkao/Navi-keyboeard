@@ -114,7 +114,7 @@ function generateKeyBoard(keys, hash) {
       var img = createImage(hash[row[t]])
 
       // 创建按钮
-      var button = produceTag('button', {textContent: '自定义', id: row[t]})
+      var button = produceTag('button', {textContent: '编辑', id: row[t]})
 
       // 编辑功能
       button.addEventListener('click', function(eventObj) {
