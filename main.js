@@ -85,7 +85,8 @@ function data_init() {
   
   // 取出localstorage并覆盖hash
   var hashInLocalStorage = JSON.parse(localStorage.getItem("temptHash") || 'null')
-  if(hashInLocalStorage) {  // 更新hash数据
+  // 更新hash数据
+  if(hashInLocalStorage) {  
     hash = hashInLocalStorage
   }
   return {
@@ -124,7 +125,7 @@ function generateKeyBoard(keys, hash) {
         var key = btn_click.id
         var input = prompt('请输入键位[' + btn_click.id + ']对应的网站地址')
         // 把默认的hash值替换为自定义url
-        hash[key] = input 
+        hash[key] = input
         img_custom.src = 'https://' + input + '/favicon.ico'
         img_custom.addEventListener('error', function(e) {
           e.target.src = 'https://i.loli.net/2017/11/10/5a05afbc5e183.png'
