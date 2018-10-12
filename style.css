@@ -14,10 +14,49 @@ a {
 main {
   display: flex;
   flex: 1;
-  min-height: 100vh;
+  height: 100vh;
   align-items: center;
   justify-content: center;
   position: relative;
+}
+input {
+  border: none;
+  outline: none;
+}
+main > .search_bar > form {
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+}
+.search_bar > form > input.text {
+  border-radius: 5px 0 0 5px;  
+  background: rgba(255,255,255,0.8); 
+  font-size: 4rem;
+  caret-color: #757575;
+  color: #ffc600;  
+  font-weight: bolder;
+  padding-left: 16px;
+  padding-right: 78px;
+}
+.search_bar > form > .button {
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  height: 78px;
+  background: rgba(255,255,255,0.8);
+  outline: none;
+  border: none;
+  padding-right: 10px;
+}
+.icon {
+  width: 5em; 
+  height: 5em;
+  vertical-align: -0.15em;
+  fill: #757575;
+  overflow: hidden;
 }
 /* 键盘遮罩层 */
 #main {

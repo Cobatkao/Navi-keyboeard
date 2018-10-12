@@ -5,12 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>hang | 最纯粹的导航首页</title>
+  <link href="//at.alicdn.com/t/font_869718_ilo6yo845ic.css">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <main>
+    <div class="search_bar">
+      <form name="s" action="http://www.baidu.com/s">
+        <input type="text" class="text" name="wd" autocomplete="on" placeholder="输入想要搜索的内容..." value="">
+        <button type="button" class="button" onclick="window.open('http://www.baidu.com/s?wd='+s.wd.value,'')">
+          <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-sousuo1"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
     <div id="main" class="wrapper"></div>
   </main>
+<script src="//at.alicdn.com/t/font_869718_7ps8odpkkgx.js"></script>
   <script src="./main.js"></script>
 </body>
 </html>
