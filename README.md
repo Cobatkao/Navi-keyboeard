@@ -68,6 +68,18 @@ function getFromLocalStorage(name) {
 
 如上，在获取数据时需要全部转换为字符串格式，然后再进行存储；等再获取值的时候也别忘了将其转化回来。
 
+### 应用场景
+
+应用场景（用户第一次登录网页会提示“网页即将改版”，第二次登录就不会提示了）
+
+```javascript
+let already = localStorage.getItem('已经提示过了')
+if（！already）{
+   alert('网页即将改版了')
+    localStorage.setItem('已经提示过了',true)
+}
+```
+
 ## error
 
 onerror事件会在文档或图像加载过程中发生错误时被触发。因为我们要获取logo，若获取失败，我们可以插入一个事先准备好的图片。
@@ -109,7 +121,18 @@ node.firstChild //找xxx的第一个子元素，也可以是last子元素
 获取元素
 
 ```javascript
+document.getElementsByName('some')
 document.getElementsByClassName('some')
 document.getElementById('some')
 document.querySelector('some')
+document.querySelectorAll('some')
 ```
+
+上面二者有区别：
+- W3C规范：前者属于DOM API，后者则是Selector API
+- 参数：querySelector接收css选择器，而getElementsBy系列接收的参数只能是单一的className、tagName和name；
+- 返回值：querySelector**返回静态node节点**，而getElementsBy系列的返回的是一个**动态Node List**；
+
+# 待完成
+
+- 按键带音效或可以整体切换至鼓点键盘 
