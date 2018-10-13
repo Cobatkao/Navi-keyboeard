@@ -1,4 +1,7 @@
 # navi_keyboard | 项目小结
+
+![navi-keyboard.jpg](https://i.loli.net/2018/10/13/5bc208bfd42a9.jpg)
+
 > a simple and helpful navigation homepage via plain javascript
 
 **keyword**: plain javascript、localStorage、favicon、onerror。
