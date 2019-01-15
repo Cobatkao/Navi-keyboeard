@@ -8,7 +8,7 @@
 
 # 简述
 
-实用原生JS实现一个键盘导航。访问地址：http://isaacgao.cn/Navi-keyboeard/index.html
+实用原生JS实现一个键盘导航。访问地址：https://cobatkao.github.io/Navi-keyboeard/index.html
 - 支持输入关键词百度搜索
 - 按下键盘导航至默认键位对应的站点
 - 编辑并绑定自定义网站
